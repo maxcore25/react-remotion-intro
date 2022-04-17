@@ -1,4 +1,5 @@
 import {useVideoConfig, useCurrentFrame} from 'remotion';
+import Rain from './Rain';
 
 export const MyComposition = () => {
 	const {fps, durationInFrames, width, height} = useVideoConfig();
@@ -18,6 +19,7 @@ export const MyComposition = () => {
 		>
 			Hello World! I made a {width}x{height}px video that is
 			{durationInFrames / fps} seconds long
+			<Rain />
 		</div>
 	);
 };
