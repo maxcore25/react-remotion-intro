@@ -14,8 +14,8 @@ const Rain: React.FC = () => {
 
 	return (
 		<AbsoluteFill>
-			{drops.map((d) => {
-				return <RainDrop x={d.x} delay={d.delay} size={d.size} />;
+			{drops.map((d, index) => {
+				return <RainDrop key={index} x={d.x} delay={d.delay} size={d.size} />;
 			})}
 		</AbsoluteFill>
 	);
